@@ -6,6 +6,10 @@
     --font-poppins: 'Poppins', sans-serif;
 }
 
+.font-poppins{
+    font-family: var(--font-poppins);
+}
+
 body{
     margin: 0;
     padding: 0;
