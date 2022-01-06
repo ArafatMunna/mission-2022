@@ -65,16 +65,29 @@ main{
 }
 
 .title-primary{
+
     font-size: 60px;
     margin: 0;
     padding: 0;
     font-family: var(--font-yeseva-one);
     font-weight: 400;
+    position: relative;
 }
 
 .title-primary-main{
     display: block;
     padding-left: 15px;
+}
+.title-primary::before{
+    content: "";
+    height: 80%;
+    width: 4px;
+    background-color: tomato;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
 }
 
 .title-color{
@@ -93,11 +106,6 @@ main{
     text-align: center;
     font-family: var(--font-poppins);
     font-weight: 700;
-}
-
-#title-border{
-    border-left: 4px solid tomato;
-    border-image-slice: 1;
 }
 
 .button{
@@ -198,9 +206,9 @@ main{
     font-weight: 700;
 }
 
-.develop__text {
+.text {
     margin: 18px 0;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
     font-family: var(--font-poppins);
     font-weight: 400;
@@ -238,14 +246,6 @@ main{
     line-height: 54px;
     font-family: var(--font-poppins);
     font-weight: 700;
-}
-
-.project__text {
-    margin: 18px 0;
-    font-size: 18px;
-    line-height: 30px;
-    font-family: var(--font-poppins);
-    font-weight: 400;
 }
 
 .project .right {
